@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button (click)="iniciarSesion()">Iniciar Sesión</ion-button>
+
+    <!-- Botones para navegar a las diferentes páginas -->
+    <ion-button routerLink="/protegida" [disabled]="!logueado">Ir a Página Protegida</ion-button>
+    <ion-button routerLink="/perfil" [disabled]="!logueado">Ir a Perfil</ion-button>
+    <ion-button routerLink="/admin">Ir a Administración</ion-button>
+    <ion-button routerLink="/admin/usuarios">Ir a Usuarios (Admin)</ion-button>
+  
+</ion-content>
